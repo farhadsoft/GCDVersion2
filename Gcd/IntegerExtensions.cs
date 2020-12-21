@@ -81,9 +81,7 @@ namespace Gcd
             }
             else
             {
-                return ((b & 1) == 0)
-                    ? GcdByStein(a, b >> 1)
-                    : GcdByStein(b, a > b ? a - b : b - a);
+                return ((b & 1) == 0) ? GcdByStein(a, b >> 1) : GcdByStein(b, a > b ? a - b : b - a);
             }
         }
 
